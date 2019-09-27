@@ -26,9 +26,9 @@ namespace ExercicioFesta
             _listaDeConvidados.Add(convidado);
         }
 
-        public int TotalConvidados()
+        public double TotalConvidados()
         {
-            int total = 0;
+            double total = 0;
             foreach (var c in _listaDeConvidados)
             {
                 total++;
@@ -43,9 +43,8 @@ namespace ExercicioFesta
             {
                 if (c.Sexo == EnumSexo.Masculino) totalHomens++;
             }
-
             //_listaDeConvidados.ForEach(x => {});
-            return (totalHomens/TotalConvidados()) * 100;
+            return (totalHomens / TotalConvidados()) * 100;
         }
 
         public double PorcentagemDeMulheres()
@@ -71,25 +70,33 @@ namespace ExercicioFesta
                     totalConvidadosCortesia++;
                 }
             } 
-            return (totalConvidadosCortesia/ TotalConvidados()) * 100;
+            return (totalConvidadosCortesia / TotalConvidados()) * 100;
         }
 
         public string ListaDeConvidados()
         {
             StringBuilder listaDeConvidados = new StringBuilder();
+            listaDeConvidados.AppendLine("- Lista de Convidados -\n");
+
             foreach (var convidado in _listaDeConvidados)
             {
                 listaDeConvidados.AppendLine(String.Format(
-                    "Tipo : {0} \n Nome: {1} \n Sexo: {2} \n CPF: {3} \n Data de Nascimento: {4} \n ", 
+                    "Tipo : {0}\nNome: {1}\nSexo: {2}\nCPF: {3}\nData Nascimento: {4}\n", 
                     convidado, convidado.Nome, convidado.Sexo, convidado.CPF, convidado.DataNascimento)
                 );
             }
-            listaDeConvidados.AppendLine("---------");
+            
             return listaDeConvidados.ToString();
         }
+
+        public double CalculaValorTotalPago()
+        {
+            double valorTotalPago = 0;
+            foreach (var convidado in _listaDeConvidados)
+            {
+                valorTotalPago += convidado.CalculaValorIngresso(ValorIngresso);
+            }
+            return valorTotalPago;
+        }
     }
-
-
-
-
 }

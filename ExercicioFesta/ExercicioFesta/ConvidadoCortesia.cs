@@ -20,7 +20,7 @@ namespace ExercicioFesta
 
         public override string ToString()
         {
-            return "kkkkkk";
+            return "ConvidadoCortesia";
         }
     }
 }

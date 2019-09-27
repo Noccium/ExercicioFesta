@@ -24,8 +24,12 @@ namespace ExercicioFesta
             } else
             {
                 throw new ArgumentException("Sexo inválido!");
-            }
-            
+            }    
+        }
+
+        public override string ToString()
+        {
+            return "ConvidadoVIP";
         }
     }
 }

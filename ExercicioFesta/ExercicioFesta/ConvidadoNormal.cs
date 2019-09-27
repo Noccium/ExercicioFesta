@@ -17,5 +17,10 @@ namespace ExercicioFesta
         {
             return valorIngresso;
         }
+
+        public override string ToString()
+        {
+            return "ConvidadoNormal";
+        }
     }
 }

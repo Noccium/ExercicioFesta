@@ -1,0 +1,4 @@
+c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.exe
+c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.pdb
+c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.exe
+c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.pdb
