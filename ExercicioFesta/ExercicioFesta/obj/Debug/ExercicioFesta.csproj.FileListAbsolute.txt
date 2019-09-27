@@ -1,0 +1,7 @@
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.exe.config
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.exe
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.pdb
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\obj\Debug\ExercicioFesta.csprojAssemblyReference.cache
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\obj\Debug\ExercicioFesta.csproj.CoreCompileInputs.cache
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\obj\Debug\ExercicioFesta.exe
+C:\Users\lucas.sousa\source\repos\ExercicioFesta\ExercicioFesta\obj\Debug\ExercicioFesta.pdb
