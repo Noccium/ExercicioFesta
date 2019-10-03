@@ -2,3 +2,9 @@ c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\Exerci
 c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.pdb
 c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.exe
 c:\users\lucas.sousa\documents\visual studio 2010\Projects\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.pdb
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.exe
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\bin\Debug\ExercicioFesta.pdb
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.csprojAssemblyReference.cache
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.csproj.CoreCompileInputs.cache
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.exe
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.pdb

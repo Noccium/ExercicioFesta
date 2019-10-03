@@ -30,6 +30,10 @@ namespace ExercicioFesta
             Console.WriteLine("Percentual de Mulheres: " + festa.PorcentagemDeMulheres().ToString() + "%\n");
             Console.WriteLine("Percentual de Convidados Cortesia: " + festa.PorcentagemConvidadosCortesia().ToString() + "%\n");
             Console.WriteLine("Valor Total Pago: R$ " + festa.CalculaValorTotalPago().ToString("F") + "\n");
+
+            Console.WriteLine("Converter Convidado");
+            var novoConvidado = new Conversor<ConvidadoNormal, ConvidadoVIP>().Converta(convidadoNormal);
+            Console.WriteLine(novoConvidado.ToString());
         }
     }
 }
