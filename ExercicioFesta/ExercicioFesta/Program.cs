@@ -11,7 +11,7 @@ namespace ExercicioFesta
         {
             DateTime data = new DateTime(2019, 09, 27);
             Festa festa = new Festa(data.Date, "Festa1", 125.87);
-            ConvidadoCortesia convidadoCortesia = new ConvidadoCortesia("João Cortesia", "75097843191", DateTime.Now, EnumSexo.Masculino);
+            ConvidadoCortesia convidadoCortesia = new ConvidadoCortesia("", "75095783.1", new DateTime(1996,1,1), (EnumSexo)4);
             ConvidadoNormal convidadoNormal = new ConvidadoNormal("João Normal", "75097843191", DateTime.Now, EnumSexo.Masculino);
             ConvidadoVIP convidadoVIP = new ConvidadoVIP("João Vip", "75097843191", DateTime.Now, EnumSexo.Masculino);
             ConvidadoNormal convidadoNormal2 = new ConvidadoNormal("Maria Normal", "75097843191", DateTime.Now, EnumSexo.Feminino);
@@ -31,9 +31,17 @@ namespace ExercicioFesta
             Console.WriteLine("Percentual de Convidados Cortesia: " + festa.PorcentagemConvidadosCortesia().ToString() + "%\n");
             Console.WriteLine("Valor Total Pago: R$ " + festa.CalculaValorTotalPago().ToString("F") + "\n");
 
-            Console.WriteLine("Converter Convidado");
-            var novoConvidado = new Conversor<ConvidadoNormal, ConvidadoVIP>().Converta(convidadoNormal);
-            Console.WriteLine(novoConvidado.ToString());
+            //Console.WriteLine("Converter Convidado");
+            //var novoConvidado = new Conversor<ConvidadoNormal, ConvidadoVIP>().Converta(convidadoNormal);
+            //Console.WriteLine(novoConvidado.ToString());
+
+            var validadorDeConvidado = new ValidadorDeConvidado<Convidado>();
+
+            validadorDeConvidado.Valide(convidadoCortesia);
+            
+
+
+            //Console.WriteLine(ValidadorDeConvidado<Convidado>.ValidaSexo((EnumSexo)1)); 
         }
     }
 }

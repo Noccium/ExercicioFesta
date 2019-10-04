@@ -8,3 +8,5 @@ C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFes
 C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.csproj.CoreCompileInputs.cache
 C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.exe
 C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.pdb
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\bin\Debug\FluentValidation.dll
+C:\Users\lucas.sousa\Downloads\ExercicioFesta-master\ExercicioFesta\ExercicioFesta\obj\x86\Debug\ExercicioFesta.csproj.CopyComplete
