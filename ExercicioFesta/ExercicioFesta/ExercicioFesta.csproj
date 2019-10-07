@@ -34,8 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\..\Desktop\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="FluentValidation">
       <HintPath>..\..\..\..\Desktop\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\..\Desktop\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,23 +52,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conversor.cs" />
-    <Compile Include="Convidado.cs" />
-    <Compile Include="ConvidadoCortesia.cs" />
-    <Compile Include="ConvidadoNormal.cs" />
-    <Compile Include="ConvidadoVIP.cs" />
-    <Compile Include="EnumSexo.cs" />
-    <Compile Include="Festa.cs" />
-    <Compile Include="ICustomList.cs" />
-    <Compile Include="ListaDeConvidados.cs" />
-    <Compile Include="ListaDeConvidadosExtensions.cs" />
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="Convidados\Conversor.cs" />
+    <Compile Include="Convidados\Convidado.cs" />
+    <Compile Include="Convidados\ConvidadoCortesia.cs" />
+    <Compile Include="Mapeamento\ConvidadoMap.cs" />
+    <Compile Include="Convidados\ConvidadoNormal.cs" />
+    <Compile Include="Convidados\ConvidadoVIP.cs" />
+    <Compile Include="Convidados\EnumSexo.cs" />
+    <Compile Include="Festa\Festa.cs" />
+    <Compile Include="Mapeamento\FestaMap.cs" />
+    <Compile Include="BancoDeDados\ICustomList.cs" />
+    <Compile Include="BancoDeDados\ListaDeConvidados.cs" />
+    <Compile Include="BancoDeDados\ListaDeConvidadosExtensions.cs" />
+    <Compile Include="Convidados\Pessoa.cs" />
+    <Compile Include="Mapeamento\PessoaMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RelatorioDeConvidados.cs" />
-    <Compile Include="ValidadorDeConvidado.cs" />
-    <Compile Include="ValidadorDeConvidadoCascadeExtensions.cs" />
-    <Compile Include="ValidadorDeConvidadoExtensions.cs" />
+    <Compile Include="BancoDeDados\RelatorioDeConvidados.cs" />
+    <Compile Include="Validadores\ValidadorDeConvidado.cs" />
+    <Compile Include="Validadores\ValidadorDeConvidadoCascadeExtensions.cs" />
+    <Compile Include="Validadores\ValidadorDeConvidadoExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,7 @@ namespace ExercicioFesta
         {
             DateTime data = new DateTime(2019, 09, 27);
             Festa festa = new Festa(data.Date, "Festa1", 125.87);
-            ConvidadoCortesia convidadoCortesia = new ConvidadoCortesia("", "75095783.1", new DateTime(1996,1,1), (EnumSexo)4);
+            ConvidadoCortesia convidadoCortesia = new ConvidadoCortesia("", "75095783.1", new DateTime(1996,1,1), EnumSexo.Masculino);
             ConvidadoNormal convidadoNormal = new ConvidadoNormal("João Normal", "75097843191", DateTime.Now, EnumSexo.Masculino);
             ConvidadoVIP convidadoVIP = new ConvidadoVIP("João Vip", "75097843191", DateTime.Now, EnumSexo.Masculino);
             ConvidadoNormal convidadoNormal2 = new ConvidadoNormal("Maria Normal", "75097843191", DateTime.Now, EnumSexo.Feminino);
@@ -23,13 +23,13 @@ namespace ExercicioFesta
             festa.AdicionarConvidado(convidadoNormal2);
             festa.AdicionarConvidado(convidadoVIP2);
 
-            Console.WriteLine(String.Format("Nome da Festa: {0}\nData: {1}\nValor Ingresso: R$ {2}\n", festa.Nome, festa.Data, festa.ValorIngresso).ToString());
-            Console.Write(festa.ListaDeConvidados());
+            Console.WriteLine(String.Format("Nome da Festa: {0}\nData: {1}\nValor do Ingresso: R$ {2}\n", festa.Nome, festa.Data, festa.ValorIngresso).ToString());
+            Console.Write(festa.TotalDeConvidados());
             Console.WriteLine("Total de Convidados: " + festa.TotalConvidados().ToString() + "\n");
             Console.WriteLine("Percentual de Homens: "+ festa.PorcentagemDeHomens().ToString() + "%\n");
             Console.WriteLine("Percentual de Mulheres: " + festa.PorcentagemDeMulheres().ToString() + "%\n");
             Console.WriteLine("Percentual de Convidados Cortesia: " + festa.PorcentagemConvidadosCortesia().ToString() + "%\n");
-            Console.WriteLine("Valor Total Pago: R$ " + festa.CalculaValorTotalPago().ToString("F") + "\n");
+            Console.WriteLine("Valor Total Festa Pago: R$ " + festa.CalculaValorTotalPago().ToString("F") + "\n");
 
             //Console.WriteLine("Converter Convidado");
             //var novoConvidado = new Conversor<ConvidadoNormal, ConvidadoVIP>().Converta(convidadoNormal);
@@ -38,9 +38,9 @@ namespace ExercicioFesta
             var validadorDeConvidado = new ValidadorDeConvidado<Convidado>();
 
             validadorDeConvidado.Valide(convidadoCortesia);
+
+            ListaDeConvidados<Convidado> listaDeConvidados = new ListaDeConvidados<Convidado>();
             
-
-
             //Console.WriteLine(ValidadorDeConvidado<Convidado>.ValidaSexo((EnumSexo)1)); 
         }
     }
