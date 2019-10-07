@@ -8,6 +8,7 @@ namespace ExercicioFesta
 {
     public abstract class Convidado : Pessoa
     {
+        public List<Festa> ListaDeFestas { get; set; }
         public Convidado(string nome, string cpf, DateTime dataNascimento, EnumSexo sexo) : 
             base(nome, cpf, dataNascimento, sexo)
         {

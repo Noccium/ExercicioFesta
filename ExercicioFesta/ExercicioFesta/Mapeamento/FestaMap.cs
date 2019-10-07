@@ -18,7 +18,7 @@ namespace ExercicioFesta
             Map(x => x.Data, "DATA").Not.Nullable();
             Map(x => x.ValorIngresso, "VALORINGRESSO").Not.Nullable();
 
-            HasMany(x => x.ListaDeConvidados).KeyColumn("Convidados").Cascade.AllDeleteOrphan();
+            HasMany(x => x.ListaDeConvidados).KeyColumn("CONVIDADOS").Cascade.AllDeleteOrphan();
 
             HasManyToMany(x => x.Id)
            .Cascade.All()

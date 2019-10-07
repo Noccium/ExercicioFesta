@@ -12,7 +12,7 @@ namespace ExercicioFesta
         {
             Table("PESSOA");
 
-            Id(x => x.CPF, "CPF").Unique();
+            Id(x => x.CPF, "CPF").Not.Nullable().Unique();
 
             Map(x => x.Nome, "NOME").Length(50).Not.Nullable();
             Map(x => x.DataNascimento).Not.Nullable();
